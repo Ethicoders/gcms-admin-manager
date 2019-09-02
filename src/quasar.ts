@@ -1,0 +1,77 @@
+import Vue from 'vue';
+
+import './styles/quasar.styl';
+import iconSet from 'quasar/icon-set/eva-icons';
+import '@quasar/extras/material-icons/material-icons.css';
+import '@quasar/extras/eva-icons/eva-icons.css';
+import langFr from 'quasar/lang/fr';
+
+import {
+  Quasar,
+  QLayout,
+  QHeader,
+  QDrawer,
+  QPageContainer,
+  QPage,
+  QToolbar,
+  QToolbarTitle,
+  QSelect,
+  QTable,
+  QTr,
+  QTd,
+  QForm,
+  QBtn,
+  QBtnDropdown,
+  QToggle,
+  QInput,
+  QIcon,
+  QList,
+  QItem,
+  QItemSection,
+  QItemLabel,
+  QTabs,
+  QTab,
+  QTabPanels,
+  QTabPanel,
+  QSpace,
+  QBar,
+  QMenu,
+} from 'quasar';
+
+Vue.use(Quasar, {
+  config: {},
+  components: {
+    QLayout,
+    QHeader,
+    QDrawer,
+    QPageContainer,
+    QPage,
+    QToolbar,
+    QToolbarTitle,
+    QSelect,
+    QTable,
+    QTr,
+    QTd,
+    QForm,
+    QBtn,
+    QBtnDropdown,
+    QToggle,
+    QInput,
+    QIcon,
+    QList,
+    QItem,
+    QItemSection,
+    QItemLabel,
+    QTabs,
+    QTab,
+    QTabPanels,
+    QTabPanel,
+    QSpace,
+    QBar,
+    QMenu,
+  },
+  directives: {},
+  plugins: {},
+  iconSet,
+  lang: langFr,
+});

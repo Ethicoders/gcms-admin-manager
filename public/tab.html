@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    I'm a tab
+    <div id="bg-col" style="width: 100px; height: 100px;transition:.4s"></div>
+    <button id="bg-trigger">Try to click</button>
+    <script>
+      console.log(window);
+
+      const bgCol = document.getElementById('bg-col');
+      const bgTrigger = document.getElementById('bg-trigger');
+      bgTrigger.addEventListener('click', e => {
+        bgCol.style.height = '200px';
+        bgCol.style.width = '200px';
+        let colorIndex = 0;
+        const colors = ['red', 'green', 'blue'];
+        setInterval(() => {
+          if (colorIndex === colors.length) {
+            colorIndex = 0;
+          }
+          bgCol.style.backgroundColor = colors[colorIndex];
+          ++colorIndex;
+        }, 500);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link href="../node_modules/quasar/dist/quasar.min.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div id="app">
+      {{ message }}
+    </div>
+    <script src="../node_modules/vue/dist/vue.js"></script>
+    <script src="../node_modules/quasar/dist/quasar.umd.min.js"></script>
+    <script>
+      const app = new Vue({
+        el: '#app',
+        template: `<div><q-btn label="My Button"></q-btn></div>`,
+        data: {
+          message: 'Hello Vue!',
+        },
+      });
+    </script>
+  </body>
+</html>
